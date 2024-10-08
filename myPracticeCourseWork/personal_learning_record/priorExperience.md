@@ -12,3 +12,5 @@
 
 
 TBD
+
+my notes from today
