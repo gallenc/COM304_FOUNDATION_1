@@ -4,6 +4,9 @@
 
 Dr quantum visits flatland
 
+log2ram https://pimylifeup.com/raspberry-pi-log2ram/
+
+
 submission 10th JAN AE1
 
 ### binary hex subnets
@@ -153,6 +156,9 @@ https://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/dev_7segs.html  7 segm
 
 lots of examples https://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/  -differnt io
 
+
+https://schweigi.github.io/assembler-simulator/ simple 8 bit assembler simulator
+
 ### jtag urart
 
 https://stackoverflow.com/questions/62073642/how-can-i-get-an-input-from-a-user-with-using-cpulator-in-arm-assembly-language
@@ -202,6 +208,8 @@ READ FRO CPULATOR UART  -- this does not work !!!
 https://www.studocu.com/en-ca/messages/question/7863926/write-in-armv7-for-cpulator-given-a-text-string-in-uart-print-it-out-such-that-all-lower-case
 
 # Raspberry PI
+
+https://kevinboone.me/pi-asm-toc.html  ARM assembly-language programming for the Raspberry Pi
 
 ## general
 which version of pi

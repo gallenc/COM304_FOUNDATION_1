@@ -2,9 +2,9 @@
 
 # Intro to Gertboard and WiringPi
 
-The Gertboard is a pre-assembled digital input output (IO) board designed for experiments with the Raspberry Pi. 
+The [Gertboard](https://cpc.farnell.com/gertboard/gertboard/board-gertboard-assembled/dp/SC12828) is a pre-assembled digital input output (IO) board designed for experiments with the Raspberry Pi. 
 
-WiringPi is a software library which we can use to manipulate circuits implemented using the Gertboard.
+[WiringPi](https://github.com/WiringPi/WiringPi) is a software library which we can use to manipulate circuits implemented using the Gertboard.
 
 The image below shows the main components on a Gertboard.
 
@@ -25,8 +25,9 @@ You can download the package into your Pi using `wget` which is a command line b
 ```
 wget https://github.com/WiringPi/WiringPi/releases/download/3.10/wiringpi_3.10_armhf.deb
 sudo apt-get install ./wiringpi_3.10_armhf.deb 
-
 ```
+Alternatively if the network is slow, download wiringpi_3.10_armhf.deb onto a USB memory stick using your PC and transfer it to your pi.
+
 WiringPi provides a command `gpio` which can control the pins from the command line.
 
 ```
@@ -54,7 +55,7 @@ These are provided for reference and further investigation if you wish, but in t
 
 | local file              |reference link              | notes                   |
 |:------------------------|:------------------------|:------------------------|
-| GertBoard c software github |  https://github.com/ChrisCummins/gertboard_sw/tree/master   | Software supplied to use with Gertboard (Does not use WiringPi) |
+| GertBoard C software github |  https://github.com/ChrisCummins/gertboard_sw/tree/master   | Software supplied to use with Gertboard (Does not use WiringPi) |
 | [assembled_gertboard_schematics.pdf](../docs/assembled_gertboard_schematics.pdf)  | [assembled_gertboard_schematics - reference](https://www.openhacks.com/uploadsproductos/assembled_gertboard_schematics.pdf) | detailed design schematics of Gertboard   |
 |  [gertboardusermanual.pdf](../docs/gertboardusermanual.pdf)  |  [gertboardusermanual.pdf](https://www.farnell.com/datasheets/1683444.pdf)  | full user manual to use with software  |
 |  [GertBoardOverview-1600404.pdf](../docs/GertBoardOverview-1600404.pdf)  | [Gertboard overview](https://www.farnell.com/datasheets/1600404.pdf)    | overview of Gertboard          |
@@ -63,14 +64,13 @@ These are provided for reference and further investigation if you wish, but in t
 ### Simplified Gertboard setup
 
 We will use the same Gertboard setup for all of our experiments. 
-THis set up wires three push buttons as inputs to the Pi and 9 Red LEDs as outputs.
+This set up wires three push buttons as inputs to the Pi and 9 Red LEDs as outputs.
 
 To connect the Gertboard to the Pi use the ribbon connector as shown below.
 
 NOTE. Turn the PI OFF before connecting the Gertboard and make sure you connect the ribbon the correct way round (note the red lead on the ribbon)
 
    ![alt text](../docs/images/gertBoardWiringToPi.png "Figure gertBoardWiringToPi.png")
-
 
 The circuit wired on the Gertboard is shown below. 
 
@@ -137,7 +137,7 @@ Wire links between GP pins and J2
 |GP0         |       |     |
 
 
-# check input output
+## Test inputs and outputs using WiringPi
 
 WiringPI has two numbering schemes for the GPIO pins. 
 
@@ -174,23 +174,27 @@ gpio readall
 
 ```
 BCM or 'Broadcom' is the pin output from the GPIO on the broadcom chip.
+
 NOTE This number corresponds to the GP0 to GP25 pin numbers on the Gertboard. 
+
+>[!IMPORTANT]  - with the Pi3, the Gertboard wrongly allocates pin GP21 to GPIO 21. 
+>GP21 is actually connected to GPIO 27
 
 wPI is the alternative WiringPi number for the pin.
 WiringPi attempts to standardise wiring using its own pin numbering scheme which we won't use.  
 
 We will use the same pin BCM numbering as is used on the Gertboard by selecting the `-g` option.
 
-You can blink the led on a pin using the following command
+You can blink the LED on a pin using the following command
 
 ```
 gpio -g blink 22 
 
 (Control-c to exit)
 ```
-This automatically puts the pin in output mode before blinking LED 5 1 to 0.
+This automatically puts the pin in OUTPUT mode before blinking LED 5 between 1 to 0.
 
-After using `blink` you can toggle the vlaue of a pin using
+After using `blink` you can toggle the value of a pin using `toggle`
 
 ```
 gpio -g toggle 22 
@@ -199,25 +203,46 @@ gpio -g toggle 22
 ```
 
 Normally, however, you need to explicitly set a pin to its output mode before setting output values.
-You MUST put pins into input mode before setting output mode.
+
+>[!IMPORTANT] You MUST put pins into INPUT mode before setting OUTPUT mode.
 
 ```
-## to set the gpio pin to output - fires set to input mode
+## to set the gpio pin to output (first set to input mode)
 gpio -g mode 22 in
 gpio -g mode 22 out
-gpio -g write 22 1   # to set the output on
-gpio -g write 22 0   # to set the output off
+gpio -g write 22 1   # to set the output on +3.3v
+gpio -g write 22 0   # to set the output off 0v
 ```
 
-[testShellScript1.sh](../../session3/code/testShellScript1.sh) is a shell script which sets up a number of pins and scans up and down changing the led values.
+## WiringPi Test Scripts
+
+Linux systems use the `Bourne Shell` (`sh`) or the `Bourne Again Shell` (`bash`) for command line input.
+
+The shell can run scripts which can automate commands and operations on the linux system.
+
+Have a look and try the following scripts which use the gpio command to read switches and light leds on the gertboard.
+
+[testShellScript-inputs.sh](../../session3/code/testShellScript-inputs.sh) is a shell script which sets up the switch pins for input and prints out the state of the switches.
 
 To run use
 
 ```
 cd code
-sh ./testShellScript1.sh
+sh ./testShellScript-inputs.sh
 
 (Control-c to exit)
 ```
-If you want to play with more shell programming have a look at the [bourne shell tutorial](https://www.shellscript.sh/loops.html)
+
+[testShellScript-outputs.sh] sets up pins for output and turns leds on and off in sequence.
+
+To run use
+
+```
+cd code
+sh ./testShellScript--outputs.sh
+
+(Control-c to exit)
+```
+
+If you want to play with more shell programming like this script have a look at the [Bourne Shell Tutorial](https://www.shellscript.sh/loops.html)
 

@@ -15,15 +15,37 @@ This will show you how to run a script to install Node Red.
 
 Accept the defaults for the configuration script.
 
-Once installed, you can  start Node-RED with the command  `node-red-start`  or using the icon under   Menu / Programming / Node-RED
+Accept the installer option to install the standard GPIO library. 
 
-Then point your browser to http://localhost:1880 or http://{your_pi_ip-address}:1880
+(other gpio nodes are available if you want to experiment. 
+See [interacting-with-pi-gpio](https://nodered.org/docs/faq/interacting-with-pi-gpio#node-red-node-pi-gpiod) )
 
-The installer offers the option to install the standard GPIO library. 
+Once installed, you can control Node-RED with the commands
 
-See [interacting-with-pi-gpio](https://nodered.org/docs/faq/interacting-with-pi-gpio#node-red-node-pi-gpiod)
+```
+node-red-start # to start
 
-## Tutorials on Node RED
+node-red-stop # to stop
+```
+or using the icon under `Menu / Programming / Node-RED`
+
+Then point your browser to [http://localhost:1880](http://localhost:1880) or [http://{your_pi_ip-address}:1880](http://{your_pi_ip-address}:1880)
+
+Once the node red application starts in your browser, you an use the `pallet` to install the following modules:
+
+[node-red-contrib-ui-led](https://flows.nodered.org/node/node-red-contrib-ui-led)
+
+[node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
+
+   ![alt text](../docs/images/InstallNodeRedDashboard.png "Figure InstallNodeRedDashboard.png")
+
+Now continue to the [Simple Traffic Light examples from Bob Potter](../docs/Simple-Pi-NodeRed.md) 
+
+followed by [getting your Gertboard to work with the PI and the Wiring Pi library](../docs/gertboard-wiringpi-intro.md)
+
+You can also learn more by playing with the tutorials listed below.
+
+## Additional Tutorials on Node RED
 
 To try turning on and off GPIO pins which you configured on the Gertboard, try the following tutorial
 
