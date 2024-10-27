@@ -1,4 +1,4 @@
-[Main Menu](../../sessions/README.md) | [session5](../session5/) | [Introduction to CPULator](../docs/IntroToCPULator.md)
+[Main Menu](../../sessions/README.md) | [session5](../../session5/) | [Introduction to CPULator](../docs/IntroToCPULator.md)
 
 # Introduction to ARM Assembler and C programming using CPUlator
 
@@ -93,7 +93,7 @@ We are only going to play with the JTAG UART, the VGA display, and the Seven-Seg
 Note - if you want to learn more about C see the [C Tutorial](https://www.w3schools.com/c/index.php).
 Many of these examples will also work in CPULator or on your Pi.
 
-Open the [CPULator ARM 7 simulator](https://cpulator.01xz.net/?sys=arm-de1soc) and paste the following C program in the Editor window.
+Open the [CPULator ARM 7 simulator](https://cpulator.01xz.net/?sys=arm-de1soc), set the Language to `C` and paste the following C program in the Editor window.
 
 ```
 #include <stdio.h>
@@ -165,6 +165,14 @@ If we look at memory location 0x1766c we can see it contains the string "Hello, 
 So the program is passing the address of the "Hello, world" string as an argument to the `printf` function.
 
 ![alt text](../docs/images/HelloWorldDissassembly2.png "Figure HelloWorldDissassembly2.png")
+
+### Stacks, Subroutines, Interrupts
+
+To complete our introduction to progrmming concepts, look at [Subroutines and Stacks](../docs/stacks-routines.md) 
+
+Then look at [Interrupts](../docs/Interrupts.md) 
+
+Now try the assembler examples below.
 
 ## The same thing in assembler
 

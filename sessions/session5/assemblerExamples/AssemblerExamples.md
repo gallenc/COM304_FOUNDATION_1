@@ -4,17 +4,26 @@
 
 Copy each of these examples into CPULator set to ARM-7
 
-### Writing to UART
+### Writing to a screen terminal UART
 
-Write-jtag-uart - illustrates sending strings to the uart [write-jtag-uart.s](../assemblerExamples/code/write-jtag-uart.s)
+This example illustrates sending string to the UART (Universal Asynchronous Receiver/Transmitter) which is often used to send serial characters to a terminal.
 
-This example illustrates sending string to the UART (Universal Asynchronous Receiver/Transmitter) which is often used to drive modems.
+![alt text](../assemblerExamples/images/UartWriteStrings.png "Figure UartWriteStrings.png")
 
-The original source for this example came from David Brown https://bohr.wlu.ca/cp216/labs/lab08InputOutput.php#Topicss
+An example Assembler program for writing to the UART Terminal is 
+[write-jtag-uart.s](../assemblerExamples/code/write-jtag-uart.s)
+
+Load the example ARM7 assembly code into CPUlator and press `Compile and Load`.
+
+Press `Continue` and see the strings written to the UART display.
+
+(The original source for this example came from David Brown https://bohr.wlu.ca/cp216/labs/lab08InputOutput.php#Topicss)
 
 ## Sending pictures to the VGA
 
-VGA Example - illustrates displaying multiple images to the VGA [vga-example.s](../assemblerExamples/code/vga-example.s)
+VGA Example - illustrates displaying multiple images to the VGA.
+
+See [vga-example.s](../assemblerExamples/code/vga-example.s)
 
 This example illustrates writing pictures to the VGA adaptor. 
 Not that the 3 pictures are encoded as Hex words at the bottom of the assembler code.
