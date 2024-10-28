@@ -1,6 +1,10 @@
-[Main Menu](../../sessions/README.md) | [session7](../session7/) | [package management](../docs/package-management-apache.md)
+[Main Menu](../../README.md) | [session7](../../session7/) | [package management](../docs/package-management-apache.md)
 
-## operating system package management
+# Operating System Package Management
+
+In this section, we will first give an overview of package management before looking specifically at how to install an apache 2 web server on debian system or a Raspberry Pi.
+
+## Overview of System Package Management
 
 A full operating system consists of multiple software component which, depending on the application, may or may not need to be installed.
 Each of these components may in turn rely on other packages or utilities in order to operate.
@@ -165,7 +169,7 @@ The web page is at `/var/www/html/index.html`
 Note that any page named index.html will be served without needing the name in the url.
 
 Create a second page in the directory using the nano editor.
-(note that the pages are created with root ownership so you must use sudo)
+(note that the pages are created with root ownership so you must use sudo).
 
 ```
 cd 

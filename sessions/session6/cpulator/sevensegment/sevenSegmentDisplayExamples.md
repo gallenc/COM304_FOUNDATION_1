@@ -1,8 +1,8 @@
-[Main Menu](../../sessions/README.md) | [session6](../../session6/) | [Seven Segment Display Examples](../sevensegment/sevenSegmentDisplayExamples.md)
+[Main Menu](../../../README.md) | [session6](../../../session6/) | [Seven Segment Display Examples](../sevensegment/sevenSegmentDisplayExamples.md)
 
 # Seven Segment Display Examples
 
-In this exercise we will continue our exploration of manipulating hardware devices by looking at the 7 segment displays on the CPULator.
+In this exercise we will continue our exploration of manipulating hardware devices by looking at the 7 segment displays on the CPUlator.
 
 Seven Segment displays are a technology which can display numerics and symbols using just seven LEDs.
 You can see more about symbol mapping in the [Wikipedia 7 segment displays article](https://en.wikipedia.org/wiki/Seven-segment_display)
