@@ -163,13 +163,15 @@ It is worth taking time to become familiar with some of the key terminal command
 |  nano   | easier to use text editor                                 |
 |  df -h  | Shows how much disk has been used |
 |  top    | shows top processes and memory allocation on the system |
-|  ps     | shows processes belonging to you<BR> ps -aux shows all processes on the system<br>ps -aux | grep 'process name' finds a particular process |
+|  ps     | shows processes belonging to you<BR> ps -aux shows all processes on the system<br>ps -aux &#124; grep process-name  # finds a particular process by name |
 | sudo    | performs a command with root privileges if you are in the sudoers group  |
 | ping    | checks connectivity to a url or IP address |
 | ifconfig| shows all ethernet interfaces adn IP addresses |
 | route -n | shows the routing table |
 
 Here is a useful [command line for beginners tutorial](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
+
+Also have a look at the [Bourne Shell Tutorial](https://www.shellscript.sh)
 
 ## Package Management
 
