@@ -74,8 +74,24 @@ Two protocols are widely chosen in this layer;
 Each UDP packet is stand alone and is sent `fire and forget`.
 In other words, there is no guarantee that UDP packets will arrive or that they will arrive in the same order as they were sent.
 
+![alt text](../docs/images/udpFORMAT.png "udpFORMAT.png")
+
 `Transmission Control Protocol (TCP)` provides a more reliable transport by numbering packets so that it can resend packets which have been lost and guarantee that packets will arrive in their sent order.
 The overhead of establishing a TCP session and keeping track of lost packets makes TCP much slower then UDP and less suitable for real-time applications.
+
+![alt text](../docs/images/tcpFORMAT.png "tcpFORMAT.png")
+
+In addition to the IP Address, you will note that UDP and TCP packets in the transport layer define source and destination port numbers. 
+Port numbers consist of 16-bit numbers with a number of ports reserved for well known applications.
+
+| | |
+|:---|:---|
+|Ports 20 and 21| File Transfer Protocol (FTP) is used to transfer files between a client and a server.|
+|Port 22| Secure Shell (SSH) used to build secure network connections.|
+|Port 25| Simple Mail Transfer Protocol (SMTP) is commonly used for email.|
+|Port 53| Domain name system (DNS) is a critical process that matches human-readable domain names to machine-readable IP addresses on the modern internet. |
+|Port 80| HTTP is the protocol that enables the World Wide Web. http://localhost is automatically treated as http://localhost:80 unless told otherwise|
+|Port 443|HTTP Secure (HTTPS) is like HTTP but more secure. All HTTPS web traffic goes straight to port 443.<br>Note browsers connected to https automatically use port 443 unless told othersies i.e. https://localhost is treated as https://localhost:443 |
 
 ### Network Layer (OSI layer 3)
 
