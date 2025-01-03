@@ -83,6 +83,17 @@ lesson mainly wiring up board and getting set up, due to issues with getting Nod
 
 
 
+### **Summary**
+
+First few lessons we have learnt a bit of history, a bit of how things work and put a few bits into practice.
+
+Lots covered very quickly, still looking into bits to expand my knowledge on them e.g ARM vs x86 Bit more than the brief note!
+
+
+
+
+
+
 
 
 
