@@ -42,7 +42,42 @@ for example, A user input from a mouse or keyboard
 
 
 
-### **session 6***
+### **session 6**
+
+## operating systems
+Scheduling "In computing, scheduling is the action of assigning resources to perform tasks. The resources may be processors, network links or expansion cards. The tasks may be threads, processes or data flows." (https://en.wikipedia.org/wiki/Scheduling_(computing))
+
+https://www.youtube.com/watch?v=Jkmy2YLUbUY&ab_channel=JacobSorber Explains it better than i can ever put in any notes
+
+Brief : scheduling is scheduling work for the cpu and deciding what order and when to do it.
+
+## Memory Managment
+
+Virtual memory (Disk Storage that pretends to be ram when not needed) is used when Physical RAM isn't needed at that second so pages are stored in Swap files on the disk until its needed and swapped to RAM.
+
+This solved the issue of limited RAM on earlier PC's although now is less of a issue still good to have to stop crashes etc, also keeps background activited from hogging all ram
+
+"uses both hardware and software to enable a computer to compensate for physical memory shortages, temporarily transferring data from random access memory (RAM) to disk storage."  https://www.techtarget.com/searchstorage/definition/virtual-memory#:~:text=Virtual%20memory%20is%20a%20common,(RAM)%20to%20disk%20storage.
+
+Explained in better terms
+
+
+## Kernel and user processes
+
+Processes that run at Kernel level and have full access to all the memory in the system
+
+IBM explain it better (funilly enough) https://www.ibm.com/docs/pl/aix/7.1?topic=processes-introduction-kernel
+
+
+User processes are different in they operate outside of the kernel and are controlled by the kernel in what they can do
+ User processes are what 99% of users use every day, e.g browsers.
+
+ 
+
+
+
+
+
 
 
 
