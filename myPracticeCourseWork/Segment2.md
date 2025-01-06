@@ -72,6 +72,47 @@ IBM explain it better (funilly enough) https://www.ibm.com/docs/pl/aix/7.1?topic
 User processes are different in they operate outside of the kernel and are controlled by the kernel in what they can do
  User processes are what 99% of users use every day, e.g browsers.
 
+ ### Session 7
+
+ ## O.S Structure
+
+ O.S = Kernel > Services ran in Kernel space + Utilities ran in User space
+
+ https://www.geeksforgeeks.org/different-approaches-or-structures-of-operating-systems/ Explains kernels and different types of structures with different combos of various kernel types (e.g Monolithic e or micro-kernel)
+
+ Monolithic = Entire O.s Is a Single large process in kernel mode.
+ Micro-kernel = remove all Non essential components from kernel and implementing them as user/system programs (smaller kernel) (All on above website^^)
+
+## What is a Kernel
+
+https://www.youtube.com/watch?v=5S-tTDeFZfY&ab_channel=Techquickie Good explanation made quite simple and quick!
+
+Works as a interface between the Physical hardware and the processes running on it.
+Also prevents software going where it shouldn't!
+
+## Rest of lesson
+
+was all quite self explanatory e.g UI, permissions, Boot system etc 
+
+
+### Session 8
+
+Cisco Cyber security (Cert number to follow)
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+
  
 
 
