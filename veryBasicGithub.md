@@ -74,6 +74,14 @@ Now we can clone our repo into the folder.
 * To clone your repository, in the git bash window type `git clone -your-url-`
     ![alt text](../main/docs/images/checkoutGit1.png "Figure gcheckoutGit1.png")
 
+## Making changes locally and pushing to github
+
+Now that you have downloaded your repository on your local machine you can make changes and push them back up to your main repo.
+
+* Edit a file in your cloned repository using the windows text editor. Make a local small change
+    ![alt text](../main/docs/images/editFile.png "Figure editFile.png")
+* In the git terminal, commit and push your changes
+
 
 
 
