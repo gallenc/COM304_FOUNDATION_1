@@ -78,11 +78,31 @@ Now we can clone our repo into the folder.
 
 Now that you have downloaded your repository on your local machine you can make changes and push them back up to your main repo.
 
-* Edit a file in your cloned repository using the windows text editor. Make a local small change
+* Edit a file in your cloned repository using the windows notepad text editor. Make a local small change and save the file.
     ![alt text](../main/docs/images/editFile.png "Figure editFile.png")
 * In the git terminal, commit and push your changes
     ![alt text](../main/docs/images/checkoutGit3.png "Figure checkoutGit3.png")
 
+The general commands for committing code are
 
+```
+# git pull retrieves any changes from the upstream repository into your repo
+git pull 
 
+# git status tells you if you have changes to commit or push
+git status
+
+# git add --all adds any changed files to the `index` which will be committed
+git add --all
+
+# git commit saves all of your current changes in your local repository.
+# it is usual to add a meaningful message to the commit
+git commit -m 'a meaningful message for this commit'
+
+# git push pushes the current repo to your foreign repo. Note you must have pulled any foreign changes and merged them with yours first.
+git push
+
+# (you will be asked to enter your access token generated earlier)
+
+```
 
