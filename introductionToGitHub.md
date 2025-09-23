@@ -6,7 +6,7 @@ This will teach you a little bit about git and how to fork a copy of this reposi
 You will then be able to clone your fork locally.
 After this you can then proceed to doing the exercises in [session2](../main/sessions/session2/).
 
-The minimal commands you need for Git are in [Basic Github Usage]((../main/veryBasicGithub.md).
+The minimal commands you need for Git are in [Basic Github Usage](../main/veryBasicGithub.md).
 Try this first and then look at the more comprehensive instructions below.
 
 ### Introduction to GIT
