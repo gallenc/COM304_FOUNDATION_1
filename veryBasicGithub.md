@@ -63,7 +63,7 @@ You should also not use a directory which is backed up with `one drive` or any o
 
 * Open a `Windows Explorer` and in the top panel type `C:`
 * Right Click inside the explorer and create a new folder `C:\gitrepos`
-    ![alt text](../main/docs/images/checkoutGit1.png "Figure gcheckoutGit1.png")
+    ![alt text](../main/docs/images/checkoutGit2.png "Figure gcheckoutGit2.png")
 * Inside `Windows Explorer`, Right click on the `C:\gitrepos` folder and select `git bash` to open a git window inside the folder.
 * Alternatively - on the class PC's, Use the windows search bar to open a `git bash` terminal. Inside the terminal type `cd C:\gitrepos`
 
