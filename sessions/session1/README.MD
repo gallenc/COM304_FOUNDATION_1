@@ -15,6 +15,10 @@ Finally in this session we will set up a Raspberry Pi for use in class experimen
 
 We will begin however with a short history of computing.
 
+## Core Text
+A useful book for this module is [Computer Organization and Architecture by William Stallings 2021](https://www.amazon.co.uk/Computer-Organization-Architecture-William-Stallings/dp/1292096853/ref=tmm_pap_swatch_0)
+This is availble in hardback and on line in the Solent University library.
+
 ## Short history of computing
 
 At the beginning of the module it will be good to take some time to think about the short history of computing that has brought us to the technology we have today.
