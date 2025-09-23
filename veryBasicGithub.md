@@ -99,7 +99,8 @@ git add --all
 # it is usual to add a meaningful message to the commit
 git commit -m 'a meaningful message for this commit'
 
-# git push pushes the current repo to your foreign repo. Note you must have pulled any foreign changes and merged them with yours first.
+# git push pushes the current repo to your foreign repo. Note you must have pulled any foreign changes 
+# and merged them with yours first.
 git push
 
 # (you will be asked to enter your access token generated earlier)
