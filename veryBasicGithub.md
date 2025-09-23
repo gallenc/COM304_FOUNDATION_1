@@ -72,7 +72,7 @@ Now we can clone our repo into the folder.
 * In your own repository fork, select `code / HTTPS` and copy the `https://github.com/your-username/repository` url.
     ![alt text](../main/docs/images/githubsettings6.png "Figure githubsettings6.png")
 * To clone your repository, in the git bash window type `git clone -your-url-`
-    ![alt text](../main/docs/images/checkoutGit1.png "Figure gcheckoutGit1.png")
+    ![alt text](../main/docs/images/checkoutGit1.png "Figure checkoutGit1.png")
 
 ## Making changes locally and pushing to github
 
@@ -81,7 +81,7 @@ Now that you have downloaded your repository on your local machine you can make 
 * Edit a file in your cloned repository using the windows text editor. Make a local small change
     ![alt text](../main/docs/images/editFile.png "Figure editFile.png")
 * In the git terminal, commit and push your changes
-
+    ![alt text](../main/docs/images/checkoutGit3.png "Figure checkoutGit3.png")
 
 
 
