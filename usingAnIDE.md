@@ -17,7 +17,7 @@ You can view the rendered mark down by opening the mark down visualision using `
 
 Other Markdown features are documented here [Visual Code Documentation Markdown](https://code.visualstudio.com/docs/languages/markdown)
 
-    ![alt text](../main/docs/images/githubsettings1.png "Figure githubsettings1.png")
+![alt text](../main/docs/images/vscode1.png "Figure vscode1.png")
 
 
 
