@@ -34,7 +34,7 @@ Once GIT is installed, you will need to generate your own personal assess token 
 The minimal commands you need for Git and how to set up a Personal Assess Token on Github are covered in [Basic Github Usage](../../../main/veryBasicGithub.md).
 Try this first and then look at the more comprehensive instructions in [Introduction to Github](../../../main/introductionToGitHub.md) 
 
-You can also edit your repo locally using an Integrated DEvelopment Environment see [Using and IDE](../../../main/usingAnIDE.md)
+You can also edit your repo locally using an Integrated Development Environment see [Using an IDE](../../../main/usingAnIDE.md)
 
 Check out the repo you have cloned onto your local PC.
 
