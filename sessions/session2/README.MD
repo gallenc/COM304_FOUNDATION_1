@@ -31,7 +31,7 @@ See [download git for windows https://git-scm.com/downloads/win](https://git-scm
 
 Once GIT is installed, you will need to generate your own personal assess token or public and private ssh keys and clone your repository.
 
-The minimal commands you need for Git and how to set up a Personal Assess Token on Github are covered in [Basic Github Usage](../main/veryBasicGithub.md).
+The minimal commands you need for Git and how to set up a Personal Assess Token on Github are covered in [Basic Github Usage](../../../main/veryBasicGithub.md).
 Try this first and then look at the more comprehensive instructions in [Introduction to Github](../../../main/introductionToGitHub.md) 
 
 Check out the repo you have cloned onto your local PC.
