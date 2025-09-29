@@ -13,7 +13,7 @@ To use Visual Studio Code, type Visual Studio Code in your search bar and click 
 Select `file>Open Folder` and navigate to the folder containing your checked out repository.
 
 Select a Markdown file (ending in .md) and it should open in the editor.
-You can view the rendered mark down by opening the mark down visualision using `Control+K V`
+You can view the rendered mark down by opening the mark down visualisation using `Control+K V`
 
 Other Markdown features are documented here [Visual Code Documentation Markdown](https://code.visualstudio.com/docs/languages/markdown)
 
