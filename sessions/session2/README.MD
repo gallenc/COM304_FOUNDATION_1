@@ -31,11 +31,12 @@ See [download git for windows https://git-scm.com/downloads/win](https://git-scm
 
 Once GIT is installed, you will need to generate your own personal assess token or public and private ssh keys and clone your repository.
 
-You now need to follow the instructions in [Introduction to Github](../../../main/introductionToGitHub.md) 
+The minimal commands you need for Git and how to set up a Personal Assess Token on Github are covered in [Basic Github Usage](../main/veryBasicGithub.md).
+Try this first and then look at the more comprehensive instructions in [Introduction to Github](../../../main/introductionToGitHub.md) 
 
-Check out the repo on your local PC.
+Check out the repo you have cloned onto your local PC.
 
-Later you will also check out your repo on your Raspberry Pi
+Later you will also check out your repo onto your Raspberry Pi
 
 ## Binary and Boolean 
 
