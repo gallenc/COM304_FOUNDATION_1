@@ -29,7 +29,7 @@ To do this, you will need to install git on your own machine.
 
 See [download git for windows https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
 
-Once GIT is installed, you will need to generate your own public and private keys and clone your repository.
+Once GIT is installed, you will need to generate your own personal assess token or public and private ssh keys and clone your repository.
 
 You now need to follow the instructions in [Introduction to Github](../../../main/introductionToGitHub.md) 
 
