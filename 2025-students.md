@@ -21,7 +21,7 @@ List of students and forked repositories.
 |                  | Tauseef, Raheem           | 103096322     |                                                <BR><BR>                                                                                                         |          | 
 |                  | Ali, Sami                 | 103035837     |                                                <BR><BR>                                                                                                         |          | 
 |                  | White, Shaun              | 103125471     |                                                <BR><BR>                                                                                                         |          | 
-|                  |                           |               |                                                <BR><BR>                                                                                                         |          | 
+|                  | Lengalenga, Clifford      |  Q103124050   | https://github.com/cliffeezy/COM304_FOUNDATION_1 <BR><BR>                                                                                                         |          | 
 
 
 added info
