@@ -72,7 +72,7 @@ Also, it can be used when the customer needs to have some functional requirement
 Kanban was first developed by Toyota as a better way of allocating resources in a factory.
 The principles of Kanban were picked up by the software development community to help organise development teams around custoemr requirements.
 
-See [Kanban_(development)](https://en.wikipedia.org/wiki/Kanban_(development)
+See [Kanban_(development)](https://en.wikipedia.org/wiki/Kanban_(development))
 
 Your project on github is based on the Kanban system.
 
