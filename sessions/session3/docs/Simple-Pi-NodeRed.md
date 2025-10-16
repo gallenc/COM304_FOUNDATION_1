@@ -26,7 +26,7 @@ The circuit is constructed using a breadboard as illustrated in the following im
    
    ![alt text](../docs/images/piCircuit-example1.png "Figure piCircuit-example1.png")
 
-   ![alt text](../session3/docs/images/GPIOWiringPi3.png "Figure GPIOWiringPi3.png")
+   ![alt text](../docs/images/GPIOWiringPi3.png "Figure GPIOWiringPi3.png")
 
 ## Flows
 
