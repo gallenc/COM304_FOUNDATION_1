@@ -8,15 +8,15 @@ In this session we will look at computer programming languages and how they inte
 
 The session will proceed in roughly the following order:
 
-Introduction to Machine Code, Assembly code and High level Languages (This page).
+* Introduction to Machine Code, Assembly code and High level Languages (This page).
 
-[Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPUlator.md)
+* [Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPUlator.md)
 
-[Subroutines and Stacks](../session5/docs/stacks-routines.md) 
+* [Subroutines and Stacks](../session5/docs/stacks-routines.md) 
 
-[Interrupts](../session5/docs/Interrupts.md) 
+* [Interrupts](../session5/docs/Interrupts.md) 
 
-[Assembler Examples](../session5/assemblerExamples/AssemblerExamples.md)
+* [Assembler Examples](../session5/assemblerExamples/AssemblerExamples.md)
 
 ## Introduction to Machine Code, Assembly code and High level Languages.
 
