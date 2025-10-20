@@ -115,7 +115,7 @@ Copy and compile the following C code.
 
 int main()
 {
-   # bits 0000110 will activate segments 1 and 2 
+   // bits 0000110 will activate segments 1 and 2 
    *ADDR_7SEG1 = 0x00000006; 
    *ADDR_7SEG2 = 0;
 }
