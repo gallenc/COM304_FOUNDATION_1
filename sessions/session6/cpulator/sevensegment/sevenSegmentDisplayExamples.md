@@ -3,9 +3,7 @@
 # Seven Segment Display Examples
 
 In this exercise we will continue our exploration of manipulating hardware devices by looking at the 7 segment displays on the CPUlator available at 
-<a href="" target="_blank">Visit W3Schools.com!</a> 
-
-[](https://cpulator.01xz.net/?sys=arm-de1soc).
+<a href="https://cpulator.01xz.net/?sys=arm-de1soc" target="_blank">https://cpulator.01xz.net/?sys=arm-de1soc</a> 
 
 Seven Segment displays are a technology which can display numerics and symbols using just seven LEDs.
 You can see more about symbol mapping in the [Wikipedia 7 segment displays article](https://en.wikipedia.org/wiki/Seven-segment_display)
