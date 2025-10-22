@@ -86,7 +86,7 @@ libaprutil1-ldap_1.6.3-1_armhf.deb
 And install them using 
 
 ```
-sudo apt-get install -f ./*.de
+sudo apt-get install -f ./*.deb
 
 ```
 
