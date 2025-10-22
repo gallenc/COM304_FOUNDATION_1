@@ -2,7 +2,8 @@
 
 # Seven Segment Display Examples
 
-In this exercise we will continue our exploration of manipulating hardware devices by looking at the 7 segment displays on the CPUlator.
+In this exercise we will continue our exploration of manipulating hardware devices by looking at the 7 segment displays on the CPUlator available at 
+<a href="https://cpulator.01xz.net/?sys=arm-de1soc" target="_blank">https://cpulator.01xz.net/?sys=arm-de1soc</a> 
 
 Seven Segment displays are a technology which can display numerics and symbols using just seven LEDs.
 You can see more about symbol mapping in the [Wikipedia 7 segment displays article](https://en.wikipedia.org/wiki/Seven-segment_display)
@@ -114,7 +115,7 @@ Copy and compile the following C code.
 
 int main()
 {
-   # bits 0000110 will activate segments 1 and 2 
+   // bits 0000110 will activate segments 1 and 2 
    *ADDR_7SEG1 = 0x00000006; 
    *ADDR_7SEG2 = 0;
 }

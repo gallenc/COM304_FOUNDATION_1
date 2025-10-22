@@ -21,7 +21,7 @@ The C code examples provide C code equivalents to the bash scripts which work wi
 
 ### C Example 1 Input
 
-[readbuttons1.c](../../session4/code/readbuttons1.c) reads the 3 Gertbord buttons and prints an output.
+[readbuttons1.c](../../session6/raspberry/code/readbuttons1.c) reads the 3 Gertbord buttons and prints an output.
 
 This is similar functionality to [session 3 testShellScript-inputs1.sh](../../session3/code/testShellScript-inputs1.sh)
 
@@ -51,7 +51,7 @@ This will generate an assembler file called `readButtons1.s` with document refer
 
 ### C Example 2 Output
 
-[writeleds1.c](../../session4/code/writeleds1.c) cycles through LEDs on the Gertbord.
+[writeleds1.c](../../session6/raspberry/code/writeleds1.c) cycles through LEDs on the Gertbord.
 
 This is similar functionality to [session 3 testShellScript-outputs1.sh](../../session3/code/testShellScript-outputs1.sh)
 

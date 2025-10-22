@@ -1,5 +1,17 @@
 # Random notes
 
+installing pi
+```
+   19  sudo apt-get install nodejs
+   20  wget http://node-arm.herokuapp.com/node_archive_armhf.deb
+   21  sudo apt-get install nodered
+   22  bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/update-nodejs-and-nodered-deb) -help
+   23  bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/update-nodejs-and-nodered-deb) --help
+   24  bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/update-nodejs-and-nodered-deb) --node20
+   25  node -v
+```
+
+
 # General
 
 Dr quantum visits flatland

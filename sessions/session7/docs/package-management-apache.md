@@ -11,11 +11,11 @@ Each of these components may in turn rely on other packages or utilities in orde
 
 Software programs are usually shipped pre-compiled and packaged with metadata which describes where and how the program is to be installed.
 
-For instance, in Microsoft Windows, programs are usually packaged as `Dynamic Linked Library (DLL)` with the file name suffix `.dll` files.
+For instance, in Microsoft Windows, programs are usually packaged as a `Dynamic Linked Library (DLL)` files with the file name suffix `.dll`.
 A DLL is a library that contains code and data that can be used by more than one program at the same time. 
 Windows itself consists of many `.dll` files in the `C:\Windows\System32` folder.
 
-If you look at each of the programs installed in `C:\Program Files`, you will see that they each have multiple .dll files which have been installed buy the Microsoft Software Installer from `.msi` files ( a file format used to install, maintain, and remove software on Windows systems).
+If you look at each of the programs installed in `C:\Program Files`, you will see that they each have multiple .dll files which have been installed by the Microsoft Software Installer from `.msi` files ( a file format used to install, maintain, and remove software on Windows systems).
 
 Linux distributions use a similar mechanism to manage pre-compiled programs.
 

@@ -176,8 +176,8 @@ Also have a look at the [Bourne Shell Tutorial](https://www.shellscript.sh)
 
 ## Package Management
 
-Package manamgent is a key function on operating systems. 
-THe following exercise explains package managment and takes you through installing the Apache 2 web server on your Raspberry PI.
+Package management is a key function of operating systems which allows users to install and remove programs which can run using the operating systems services.
+The following exercise explains package managment and takes you through installing the Apache 2 web server on your Raspberry PI.
 
 Exercise  [Installing Apache Web Server](../docs/package-management-apache.md)
 

@@ -27,11 +27,13 @@ The light sequence should follow the timing in the following diagram
 
 The circuit is constructed using a breadboard as illustrated in the following images.
 
-   ![alt text](../docs/images/pi-node-red-gpio.drawio.png "Figure gpi-node-red-gpio.drawio.png")
+   ![alt text](../docs/images/pi-node-red-gpio.png "Figure gpi-node-red-gpio.png")
    
    ![alt text](../docs/images/LED-image.png "Figure LED-image.png")
    
-   ![alt text](../docs/images/piCircuit-example1.png "Figure piCircuit-example1.png")
+   ![alt text](../docs/images/piCircuit-example2.jpg "Figure piCircuit-example2.jpg")
+
+   ![alt text](../docs/images/GPIOWiringPi3.png "Figure GPIOWiringPi3.png")
 
 ## Flows
 
