@@ -16,6 +16,13 @@ The LED's must turn on and off in the following sequence:
 5. RED
 ```
 
+The light sequence should follow the timing in the following diagram
+
+   ![alt text](../docs/images/lightsequence.png "Figure lightsequence.png")
+   
+   (from spreadsheet [Traffic_light_sequence-switching_v3.xlsx](../docs/images/Traffic_light_sequence-switching_v3.xlsx) )
+
+
 ## wiring
 
 The circuit is constructed using a breadboard as illustrated in the following images.
