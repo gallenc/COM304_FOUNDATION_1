@@ -91,7 +91,11 @@ On the pi we could correct this by deleting the etho default route using
 ```
 sudo ip route del default dev eth0
 ```
-
+Unfortunately, on later raspbian systems, the network manager adds back the deleted route. 
+So another alternative would be to add a new route to the wifi default gateway with a lower metric
+```
+sudo route add -net default gw 10.10.0.1 netmask 0.0.0.0 dev wlan0 metric 1
+```
 
 ### PC Ethernet Config and Routing Table
 
