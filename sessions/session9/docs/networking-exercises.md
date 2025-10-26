@@ -9,7 +9,7 @@ Routers typically have multiple ports each with a different IP address.
 When a packet enters a router through one port, it uses a `routing table` to determine which port to use to forward the packet to its next destination.
 
 These routing tables can be `statically` (manually) set up for small networks.
-In larger networks, network routers use [routing protocols]https://en.wikipedia.org/wiki/Routing_protocol) such as OSPF (Open Shortest Path First) to exchange information so that each router's routing table will forward packets in the most optimum direction to get to towards their destination.
+In larger networks, network routers use [routing protocols](https://en.wikipedia.org/wiki/Routing_protocol) such as OSPF (Open Shortest Path First) to exchange information so that each router's routing table will forward packets in the most optimum direction to get to towards their destination.
 
 Routing Protocols are for a more advanced modules but we are going to look at the static routing tables used in a small Local Area Network such as is usually found in a home office.
 
