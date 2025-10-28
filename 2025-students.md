@@ -21,7 +21,8 @@ List of students and forked repositories.
 |  Rtauseef17      | Tauseef, Raheem           | 103096322     | https://github.com/Rtauseef17/COM304_FOUNDATION_1   <BR><BR>  https://github.com/Rtauseef17/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record    |          | 
 |                  | Ali, Sami                 | 103035837     |  https://github.com/SamiAli110/COM304_FOUNDATION_1 <BR><BR>  https://github.com/SamiAli110/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record               |          | 
 |                  | White, Shaun              | 103125471     |  https://github.com/ShaunW23/COM304_FOUNDATION_1 <BR><BR>   https://github.com/ShaunW23/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record       |          | 
-|                  | Lengalenga, Clifford      |  Q103124050   | https://github.com/cliffeezy/COM304_FOUNDATION_1 <BR><BR>   https://github.com/cliffeezy/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record      |          | 
+|                  | Lengalenga, Clifford      | Q103124050   | https://github.com/cliffeezy/COM304_FOUNDATION_1 <BR><BR>   https://github.com/cliffeezy/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record      |          | 
+|  Domiarik1       | Arikpo Dominion           | Q103048642    |  https://github.com/Domiarik1/COM304_FOUNDATION_1 <BR><BR>   https://github.com/Domiarik1/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record)    |          | 
 |                  |                           |               |                                                <BR><BR>                                                                                                         |          | 
 
 
