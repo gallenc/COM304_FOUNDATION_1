@@ -99,14 +99,6 @@ Port numbers consist of 16-bit numbers with a number of ports reserved for well 
 |Port 80| HTTP is the protocol that enables the World Wide Web. http://localhost is automatically treated as http://localhost:80 unless told otherwise|
 |Port 443|HTTP Secure (HTTPS) is like HTTP but more secure. All HTTPS web traffic goes straight to port 443.<br>Note browsers connected to https automatically use port 443 unless told othersies i.e. https://localhost is treated as https://localhost:443 |
 
-### The Link Layer (OSI layer 2)
-
-The link layer is used for local point to point communications where the communicating devices send signals directly between each other over a physical medium.
-
-The network layer joins together separate link layer segments to form an end to end network.
-
-Review [The Link Layer](../docs/link-layer.md) for more information.
-
 ### Network Layer (OSI layer 3)
 
 The `network layer` is used to communicate across a network consisting of multiple `link layer` segments.
@@ -119,3 +111,10 @@ Having reviewed the examples above, try the following networking exercises on yo
 
 [Networking Exercises](../docs/networking-exercises.md)
 
+### The Link Layer (OSI layer 2)
+
+The link layer is used for local point to point communications where the communicating devices send signals directly between each other over a physical medium.
+
+The network layer joins together separate link layer segments to form an end to end network.
+
+Review [The Link Layer](../docs/link-layer.md) for more information.
