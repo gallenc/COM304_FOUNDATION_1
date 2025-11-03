@@ -26,7 +26,9 @@ The diagram below illustrates how domestic `gateway routers` connect to a core `
 
 We will see that a network can be divided into multiple sub-networks and that routers are used to pass packets from their source device across several subnetworks to their final destination device.
 
-Note that in this example, each edge router has a public IP address ending in /30. 
+Note that in this example, each edge router has a public IP address ending in `/30` while the private home network has a private ip address ending in `/24`.
+This is called the `subnet mask` in `CIDR notation`.
+We will look in more detail at this later but for now,
 * See if you can calculate how many hosts can be in the `/30` edge network using the [subnet calculator](https://www.calculator.net/ip-subnet-calculator.html)
 * See if you can calculate how many host addresses can be attached to the `/24` private home network side of the gateway routers. 
 
