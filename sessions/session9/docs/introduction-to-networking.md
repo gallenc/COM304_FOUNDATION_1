@@ -4,7 +4,7 @@
 
 In this section we will give a basic introduction to `networking`, that is, how computers and devices communicate with each other over the Internet.
 
-Modern computer networks use the `Internet Protocol (IP)` to divide the data to be communicated into separate `datagrams` or `packets` which contain multiple bytes.
+Modern computer networks use the `Internet Protocol (IP)` to divide the data to be communicated into separate `datagrams` or `packets` which are like addressed envelops containing multiple bytes.
 These packets are separately routed through the network and reassembled at their destination into their original format.
 
 IP networks contain devices which can be characterised as computers or routers.
@@ -15,14 +15,20 @@ For example most PCs have a wifi interface and a wired interface.
 These are usually `end points` of a network since they only originate or consume network traffic but don't route traffic between `ports`.
 (Computers can be set up to act as routers if they have multiple ports but this is usually the role of dedicated router hardware).
 
-`Routers` are devices in a network which collaborate to `route` packets from  across the network to their final destination.
+`Routers` are devices in a network which collaborate to `route` packets from their source across the network to their final destination.
+
+Our simple introduction to IP networking will concentrate on what happens in a small office or home network at the edge of the Internet.
+This will introduce the basic networking principles but will leave a full discussion of enterprise networking to a later networking course.
 
 The diagram below illustrates how domestic `gateway routers` connect to a core `provider network` which carries communications to a far destination.
 
 ![alt text](../docs/images/routers.drawio.png "routers.drawio.png")
 
-Our simple introduction to IP networking will concentrate on what happens in a small office or home network at the edge of the Internet.
-This will introduce the basic principles but will leave a full discussion of enterprise networking to a later networking course.
+We will see that a network can be divided into multiple sub-networks and that routers are used to pass packets from their source device across several subnetworks to their final destination device.
+
+Note that in this example, each edge router has a public IP address ending in /30. 
+* See if you can calculate how many hosts can be in the edge network using the [subnet calculator](https://www.calculator.net/ip-subnet-calculator.html)
+* See if you can calculate how many host addresses can be attached to the /24 private home network side of the gateway routers. 
 
 ## Network protocol layers
 
