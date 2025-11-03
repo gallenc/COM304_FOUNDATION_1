@@ -2,11 +2,21 @@
 
 # Network Layer (OSI layer 3)
 
+The network layer controls end to end routing of packets across the network.
+In this section we will discuss how IP addresses and subnets are defined and how routing tables are used to discover the `next hop` for a packet entering the router.
+
+The following diagram shows several subnets connected by a set of routers.
+In this case each subnet can have up to 254 routers or host machines attached.
+Note that a packet from the machine at `131.185.21.78` will have to cross three subnets to reach the internet gateway router.
+
+![alt text](../docs/images/routing2.drawio.png "routing2.drawio.png")
+
+We wil now consider how IP packets traverse a network.
+
+## Internet Addresses
 The Internet Packet frame format is shown below
 
 ![alt text](../docs/images/IPv4_Packet-en.svg.png "Ethernet_Type_II_Frame_format.svg.png")
-
-## Internet Addresses
 
 The Internet V4 protocol defines a 32 bit IP address for each device in the network. 
 Each network layer frame has a `source IP address` and a `destination IP address` which is used by the network layer to deliver the frame to the correct device. 
@@ -136,10 +146,6 @@ Most domestic routers perform NAT translation between the single public IP addre
 `Routers` are network devices which relay IP packets from router to router across a `wide area network` towards their destination. 
 A router can have many interfaces, each connected to different subnetworks.
 
-The following diagram shows several subnets connected by a set of routers
-
-![alt text](../docs/images/routing2.drawio.png "routing2.drawio.png")
-
 A router (or computer) will also have an internal `loopback` interface which it uses to originate or consume traffic destined for itself.
 The `loopback` interface is given the IP address of the device itself and is the address other routers use to communicate with the device itself.
 The `loopback` interface usually also has a local IP address of `127.0.0.1` with a DNS name of `localhost`.
@@ -157,7 +163,7 @@ A `routing table` is used by each router to determine the most optimal next hop 
 `Indirect Forwarding` happens when the destination is elsewhere and the router must decide which is the best port to forward the packet to move it closer to its destination.
 
 There is a danger that if a network is incorrectly set up, packets can circulate endlessly between routers and never reach a destination. 
-For this reason, IP packets are given a `time to live` which limits the number of hops they can traverse before they are dropped.
+For this reason, IP packets are given a `time to live TTL` which limits the number of hops they can traverse before they are dropped.
 
 A `static route` is a route which has been manually entered in the routing table. 
 
