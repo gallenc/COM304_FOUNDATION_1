@@ -86,20 +86,21 @@ In the past (prior to 1993) IANA allocated ranges of ip addresses to networks in
 
 Class A  - subnet mask `255.0.0.0` or `\8`
 
-There are 128 Class A networks with 16,777,216 addresses per class A,  
+There are 126 Class A networks with 16,777,216 addresses per class A,  
 
 Class B - subnet mask `255.255.0.0` or `\16`
 
-There are 16,384 Class B networks with 1,073,741,824  addresses per class B
+There are 16,382 Class B networks with 65,534 host addresses per class B
 
 Class C - subnet mask `255.255.255.0` or `\24`
 
-There are 2,097,152 Class C networks with 536,870,912  addresses per class C.
+There are 2,097,152 Class C networks with 254  addresses per class C.
 
 Class A networks were assigned to [large organisations and regional Internet registers](https://en.wikipedia.org/wiki/List_of_assigned_/8_IPv4_address_blocks) and some of these allocations still remain in place.
 
 This classification of sub networks proved to be inefficient and resulted in a mismatch between the allocated address ranges and the actual needs of organisations. 
 Classful networks gave way to [Classless Inter-Domain Routing (CIDER)](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) in 1993.
+In CIDR notation, the number of bits in the netmask are provided as a /n suffix to the ip address.
 
 ## Public and Private networks and NAT
 A `public` IP address is an address which can be reached globally from anywhere on the Internet.
@@ -108,6 +109,12 @@ In order to avoid duplicate public addresses on the Internet, the [Internet Assi
 
 Several ranges of addresses have been reserved as [private IP addresses](https://en.wikipedia.org/wiki/Private_network).
 These addresses are designated for internal use only by an organisation and not for routing across the Internet.
+Examples are:
+* 172.16.0.0/12 	(172.16.0.0 – 172.31.255.255 representing 16 contigous class B networks
+* 192.168.0.0/16 (192.168.0.0 – 192.168.255.255 representing 256 contigous class C networks
+* 
+A `bogon` network is an invalid or illegitimate network on the public internet, comprising IP addresses that have not been officially assigned or are reserved for private use.
+They should not be visible on the public internet and are often filtered by network administrators to prevent malicious activities like IP spoofing.
 
 Most Internet service providers (ISPs) allocate only a single publicly routable IPv4 address to each residential customer, but many homes have more than one computer, smartphone, or other Internet-connected device. In this situation, a `Network Address Translator (NAT)` gateway is usually used to provide Internet connectivity to multiple internal hosts.
 
@@ -122,7 +129,7 @@ This mapping can slow down traffic due to the load it puts on the router.
 NAT also has the effect that only internal devices can initiate communication to the internet because an external device will not know the port mapping to a particular intenal IP address. 
 This is the basis of a simple layer of `firewall security` since only certain port ranges are allowed and external devices find it difficult to initiate communication unless in response to an packet originating inside the organisations network.
 
-Most domestic routers perform NAT translation between the single public IP address allocated to a customer by the ISP and the (usually up to 255) internal devices in the home network.
+Most domestic routers perform NAT translation between the single public IP address allocated to a customer by the ISP and the (usually up to 254) internal devices in the home network.
 
 ## Network Routing using subnets
 
@@ -130,7 +137,7 @@ Most domestic routers perform NAT translation between the single public IP addre
 A router can have many interfaces, each connected to different subnetworks.
 
 A router (or computer) will also have an internal `loopback` interface which it uses to originate or consume traffic destined for itself.
-The `loopback` interface is given the IP address of the device itself and is the address other devices use to communicate with the device itself.
+The `loopback` interface is given the IP address of the device itself and is the address other routers use to communicate with the device itself.
 The `loopback` interface usually also has a local IP address of `127.0.0.1` with a DNS name of `localhost`.
 
 IP networks operate using `next hop routing` which means that routers are basically very simple.
