@@ -84,7 +84,7 @@ In other words, there is no guarantee that UDP packets will arrive or that they 
 
 ![alt text](../docs/images/udpFORMAT.png "udpFORMAT.png")
 
-`Transmission Control Protocol (TCP)` provides a more reliable transport by numbering packets so that it can resend packets which have been lost and guarantee that packets will arrive in their sent order.
+`Transmission Control Protocol (TCP)` provides a more reliable transport by numbering packets using a `sequence number` so that it can resend packets which have been lost and guarantee that packets will arrive in their sent order.
 The overhead of establishing a TCP session and keeping track of lost packets makes TCP much slower then UDP and less suitable for real-time applications.
 
 ![alt text](../docs/images/tcpFORMAT.png "tcpFORMAT.png")
