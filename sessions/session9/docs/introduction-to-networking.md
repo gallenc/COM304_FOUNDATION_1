@@ -7,11 +7,11 @@ In this section we will give a basic introduction to `networking`, that is, how 
 Modern computer networks use the `Internet Protocol (IP)` to divide the data to be communicated into separate `datagrams` or `packets` which are like addressed envelops containing multiple bytes.
 These packets are separately routed through the network and reassembled at their destination into their original format.
 
-IP networks contain devices which can be characterised as computers or routers.
+IP networks contain devices which can be characterised as `computers` or `routers`.
 
 Computers in a network may variously also be referred to as `hosts` or `servers` or `workstations`. 
 Computers can have several `ports` (also called `interfaces`).
-For example most PCs have a wifi interface and a wired interface.
+For example most PCs have a `wifi` interface and a `wired` interface.
 These are usually `end points` of a network since they only originate or consume network traffic but don't route traffic between `ports`.
 (Computers can be set up to act as routers if they have multiple ports but this is usually the role of dedicated router hardware).
 
