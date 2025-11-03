@@ -27,8 +27,8 @@ The diagram below illustrates how domestic `gateway routers` connect to a core `
 We will see that a network can be divided into multiple sub-networks and that routers are used to pass packets from their source device across several subnetworks to their final destination device.
 
 Note that in this example, each edge router has a public IP address ending in /30. 
-* See if you can calculate how many hosts can be in the edge network using the [subnet calculator](https://www.calculator.net/ip-subnet-calculator.html)
-* See if you can calculate how many host addresses can be attached to the /24 private home network side of the gateway routers. 
+* See if you can calculate how many hosts can be in the `/30` edge network using the [subnet calculator](https://www.calculator.net/ip-subnet-calculator.html)
+* See if you can calculate how many host addresses can be attached to the `/24` private home network side of the gateway routers. 
 
 ## Network protocol layers
 
