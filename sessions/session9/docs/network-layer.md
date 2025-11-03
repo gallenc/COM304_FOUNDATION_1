@@ -110,7 +110,7 @@ Class A networks were assigned to [large organisations and regional Internet reg
 
 This classification of sub networks proved to be inefficient and resulted in a mismatch between the allocated address ranges and the actual needs of organisations. 
 Classful networks gave way to [Classless Inter-Domain Routing (CIDER)](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) in 1993.
-In CIDR notation, the number of bits in the netmask are provided as a /n suffix to the ip address.
+In CIDR notation, the number of bits in the netmask are provided as a `/n` suffix to the ip address.
 
 ## Public and Private networks and NAT
 A `public` IP address is an address which can be reached globally from anywhere on the Internet.
