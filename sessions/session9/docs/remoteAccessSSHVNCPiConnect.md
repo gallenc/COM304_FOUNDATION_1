@@ -49,6 +49,11 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 ```
 This will restore connectivity to the Internet through the wifi.
 
+Note: if the pi network manager keeps automatically adding back the deleted route, try adding a higher priority route to the wifi using
+```
+admin@raspberrypi01:~ $ sudo route add -net default gw 10.10.0.1 netmask 0.0.0.0 dev wlan0 metric 1
+``` 
+
 Now that we have IP connectivity to the Pi we can use various tools to connect to the Pi from our PC. 
 
 Putty is an SSH client which runs on a PC. 
