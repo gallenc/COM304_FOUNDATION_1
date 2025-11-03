@@ -136,6 +136,8 @@ Most domestic routers perform NAT translation between the single public IP addre
 `Routers` are network devices which relay IP packets from router to router across a `wide area network` towards their destination. 
 A router can have many interfaces, each connected to different subnetworks.
 
+The following diagram shows several subnets connected by a set of routers
+
 ![alt text](../docs/images/routing2.drawio.png "routing2.drawio.png")
 
 A router (or computer) will also have an internal `loopback` interface which it uses to originate or consume traffic destined for itself.
