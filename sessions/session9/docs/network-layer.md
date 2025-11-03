@@ -122,7 +122,7 @@ These addresses are designated for internal use only by an organisation and not 
 Examples are:
 * 172.16.0.0/12 	(172.16.0.0 – 172.31.255.255 representing 16 contigous class B networks
 * 192.168.0.0/16 (192.168.0.0 – 192.168.255.255 representing 256 contigous class C networks
-* 
+ 
 A `bogon` network is an invalid or illegitimate network on the public internet, comprising IP addresses that have not been officially assigned or are reserved for private use.
 They should not be visible on the public internet and are often filtered by network administrators to prevent malicious activities like IP spoofing.
 
