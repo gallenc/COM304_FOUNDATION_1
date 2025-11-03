@@ -136,6 +136,8 @@ Most domestic routers perform NAT translation between the single public IP addre
 `Routers` are network devices which relay IP packets from router to router across a `wide area network` towards their destination. 
 A router can have many interfaces, each connected to different subnetworks.
 
+![alt text](../docs/images/routing2.drawio.png "routing2.drawio.png")
+
 A router (or computer) will also have an internal `loopback` interface which it uses to originate or consume traffic destined for itself.
 The `loopback` interface is given the IP address of the device itself and is the address other routers use to communicate with the device itself.
 The `loopback` interface usually also has a local IP address of `127.0.0.1` with a DNS name of `localhost`.
