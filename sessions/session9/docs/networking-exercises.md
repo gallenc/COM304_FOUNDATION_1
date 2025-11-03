@@ -99,7 +99,8 @@ sudo route add -net default gw 10.10.0.1 netmask 0.0.0.0 dev wlan0 metric 1
 
 ### PC Ethernet Config and Routing Table
 
-We can also look at the ports on the PC using `ipconfig`  in powerShell
+We can also look at the ports on the PC using `ipconfig`  in powerShell.
+(ipconfig /all will also show the mac address)
 
 ```
 PS C:\Users\cg02r> ipconfig
