@@ -90,7 +90,8 @@ The overhead of establishing a TCP session and keeping track of lost packets mak
 ![alt text](../docs/images/tcpFORMAT.png "tcpFORMAT.png")
 
 In addition to the IP Address, you will note that UDP and TCP packets in the transport layer define source and destination port numbers. 
-Port numbers consist of 16-bit numbers with a number of ports reserved for well known applications.
+Port numbers consist of 16-bit numbers.
+A number of destination ports are reserved for well known applications.
 
 | | |
 |:---|:---|
@@ -100,6 +101,9 @@ Port numbers consist of 16-bit numbers with a number of ports reserved for well 
 |Port 53| Domain name system (DNS) is a critical process that matches human-readable domain names to machine-readable IP addresses on the modern internet. |
 |Port 80| HTTP is the protocol that enables the World Wide Web. http://localhost is automatically treated as http://localhost:80 unless told otherwise|
 |Port 443|HTTP Secure (HTTPS) is like HTTP but more secure. All HTTPS web traffic goes straight to port 443.<br>Note browsers connected to https automatically use port 443 unless told othersies i.e. https://localhost is treated as https://localhost:443 |
+
+If a machine has only one IP address, it needs to randomly generate different source port numbers for each client request, so that the remote computer knows which port to send its repy to in order to reach the client on the computer which sent the request. 
+The source port can also be used to enable `Network Address Translation (NAT)` which we will consider under the networking layer.
 
 ### Network Layer (OSI layer 3)
 
