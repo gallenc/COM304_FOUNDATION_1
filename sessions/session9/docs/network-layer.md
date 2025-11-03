@@ -59,6 +59,7 @@ allowing us 256 possible addresses in this network definition.
 Note however that the bottom address of this range is reserved as the `network address` 192.168.0.0 and the top address of this range is reserved as the `broadcast address` 192.168.0.255 which leaves us 254 usable host addresses in this network.
 
 The `broadcast address` can be used by a host in the subnet to send a message which will be received by all hosts in the subnet regardless of their ip address.
+Note that this is the basis of the Address Resolution Protocol (ARP) discussed in the section on the [Link Layer](../docs/link-layer.md)
 
 Lets take another example `192.168.10.1/30`
 
@@ -73,9 +74,9 @@ In this case we only have 2 unmasked bits, so we can have 4 addresses in the sub
 
 We have 2 usable host addresses; `192.168.10.1` and `192.168.10.2`.
 
-This very small subnet is typical of that defined for a user connecting to an ISP, where one of the host addresses will be the ISP's gateway router and the other host address the user's router.
+This very small subnet is typical of that defined for a user connecting to an ISP, where one of the host addresses will be the ISP's `access router` and the other host address allocated to the user's `gateway router`.
 
-Calculating the number range of hosts in a subnet using binary is tiresome. 
+Calculating the range of hosts in a subnet using binary is tiresome. 
 
 Fortunately a [subnet calculator](https://www.calculator.net/ip-subnet-calculator.html) can make this much easier.
 
