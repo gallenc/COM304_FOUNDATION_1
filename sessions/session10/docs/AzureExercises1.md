@@ -23,7 +23,7 @@ Sign up for a student account using your university email at [Azure Student Acco
 
 1. log in to your new Azure account
 
-3. First you need to find which regions you can use to create a machine with your student account;
+2. First you need to find which regions you can use to create a machine with your student account;
    
    [https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade/%7E/Assignments](
 https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade/%7E/Assignments)
@@ -34,50 +34,50 @@ https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade/%7E/Assign
    
    You should see a list like `["italynorth","norwayeast","switzerlandnorth","germanywestcentral","swedencentral"]`
 
-2. Back at the Azure main dashboard, select `Virtual Machines`
+3. Back at the Azure main dashboard, select `Virtual Machines`
 
    ![alt text](../docs/images/AzureForStudents-dashboard.png "Figure AzureForStudents-dashboard.png ")
 
-3. select `Create>Azure Virtual lMachine`
+4. select `Create>Azure Virtual lMachine`
 
    ![alt text](../docs/images/AzureForStudents-create-vm.png "Figure AzureForStudents-create-vm.png ")
    
-4. You will be presented with a configuration page for the new machine
+5. You will be presented with a configuration page for the new machine
 
    ![alt text](../docs/images/AzureForStudents-create-basic.png "Figure AzureForStudents-create-basic.png ")
 
-5. Fill in the values similar to this example page.
+6. Fill in the values similar to this example page.
    
    * create a new resource group `COM304-2025`
    * select a new virtual machine name `com314-test-1`
    * choose one of the regions from the list above. (Any other region and you will not be allowed to create the machine). I chose `Norway East` because it allows automatic shutdown of machines. 
    
-6. Select a machine size from `sizes`
+7. Select a machine size from `sizes`
    Different sizes are available in each region.
    We want a very small machine so `B1s` is the beast choice 1 CPU, 1G RAM at $9.64 per month
 
-7. Select Authentication Type - password (NOT SSH which is hte default))
+8. Select Authentication Type - password (NOT SSH which is hte default))
 
    * Password : generate your own using [https://1password.com/password-generator](https://1password.com/password-generator)>
    * Username azureuser
 
-8. Select inbound ports SSH(22) HTTP (80)
+9. Select inbound ports SSH(22) HTTP (80)
 
-7. On the Disks Page Select a Hard Disk HDD (Not SSD)
+10. On the Disks Page Select a Hard Disk HDD (Not SSD)
 
 ![alt text](../docs/images/AzureForStudents-create-disks.png "Figure AzureForStudents-create-disks.png ")
 
-8. On the Management page select auto shutdown (very important!)
+11. On the Management page select auto shutdown (very important!)
 
 ![alt text](../docs/images/azure-autoshutdown.png "Figure azure-autoshutdown.png ")
 
-8. Finally select `Review + Create`
+12. Finally select `Review + Create`
 
 You will see the overview of the machine with the public IP address and you can set a DNS name for the machine
 
    ![alt text](../docs/images/overviewVM.png "Figure overviewVM.png ")
 
-9. Alterative Authentication with SSH (OPTIONAL)
+13. Alterative Authentication with SSH (OPTIONAL)
 
 Note if you select use SSH key for authentication, you will be asked to download the generated private key.
    
