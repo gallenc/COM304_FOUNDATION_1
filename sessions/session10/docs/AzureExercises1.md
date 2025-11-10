@@ -55,10 +55,8 @@ https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade/%7E/Assign
 6. Select a machine size from `sizes`
    Different sizes are available in each region.
    We want a very small machine so `B1s` is the beast choice 1 CPU, 1G RAM at $9.64 per month
-   
-![alt text](../docs/images/AzureForStudents-create-basic.png "Figure AzureForStudents-create-basic.png ")
 
-7. Select Authentication Type - password
+7. Select Authentication Type - password (not SSH)
 
    * Password : generate your own using [https://1password.com/password-generator](https://1password.com/password-generator)>
    * Username azureuser
@@ -70,7 +68,7 @@ https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade/%7E/Assign
 
 ![alt text](../docs/images/AzureForStudents-create-disks.png "Figure AzureForStudents-create-disks.png ")
 
-8. On the Management page select auto shutdown ( very important)
+8. On the Management page select auto shutdown (very important!)
 
 ![alt text](../docs/images/azure-autoshutdown.png "Figure azure-autoshutdown.png ")
 
