@@ -7,3 +7,5 @@ In this session we will look at a brief history of the Internet.
 See slides on [Internet History](../session10/docs/internethistory;v1.pdf)
 
 We will also look at signing up for an [Azure Cloud account](https://azure.microsoft.com/en-gb/free/students) using your student email address.
+
+See exercies in [Working with Azure Cloud](../session1/docs/AzureExercises1.md)
