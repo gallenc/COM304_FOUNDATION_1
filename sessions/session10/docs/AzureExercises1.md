@@ -6,6 +6,8 @@ One of the most fundamental aspect of cloud computing is the ability to create r
 A virtual machine simulates the cpu, memory and disks of a computer and can run an operating system just like a physical machine.
 In reality it is being hosted on top of physical computers in a data centre run by a cloud provider. 
 
+See the video [Microsoft reveals its MASSIVE data center (Full Tour)](https://www.youtube.com/watch?v=80aK2_iwMOs)
+
 We will be creating a virtual machine in the Microsoft Azure cloud platform.
 
 ## Signing up for an Azure account
