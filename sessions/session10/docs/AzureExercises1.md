@@ -120,4 +120,8 @@ sudo systemctl start apache2
 
 You can see the web page at http://your-vm-ip-address/
 
+See if you can work out where apache is serving the web page from and see if you can add an additional page like in the Apache exercise with the Raspberry PI
+
+
+
 
