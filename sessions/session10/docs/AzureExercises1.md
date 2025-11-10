@@ -56,12 +56,11 @@ https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade/%7E/Assign
    Different sizes are available in each region.
    We want a very small machine so `B1s` is the beast choice 1 CPU, 1G RAM at $9.64 per month
 
-7. Select Authentication Type - password (not SSH)
+7. Select Authentication Type - password (NOT SSH which is hte default))
 
    * Password : generate your own using [https://1password.com/password-generator](https://1password.com/password-generator)>
    * Username azureuser
 
-   
 8. Select inbound ports SSH(22) HTTP (80)
 
 7. On the Disks Page Select a Hard Disk HDD (Not SSD)
