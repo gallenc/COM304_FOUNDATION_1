@@ -58,11 +58,11 @@ https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade/%7E/Assign
    
 ![alt text](../docs/images/AzureForStudents-create-basic.png "Figure AzureForStudents-create-basic.png ")
 
-7. Select Authentication Type 
-   * SSH Public key
+7. Select Authentication Type - password
+
+   * Password : generate your own using [https://1password.com/password-generator](https://1password.com/password-generator)>
    * Username azureuser
-   * Generate New Key pair RSA SSH Format
-   * enter a key pair name e.g. `com314-test-1_key`
+
    
 8. Select inbound ports SSH(22) HTTP (80)
 
@@ -75,3 +75,50 @@ https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade/%7E/Assign
 ![alt text](../docs/images/azure-autoshutdown.png "Figure azure-autoshutdown.png ")
 
 8. Finally select `Review + Create`
+
+You will see the overview of the machine with the public IP address and you can set a DNS name for the machine
+
+   ![alt text](../docs/images/overviewVM.png "Figure overviewVM.png ")
+
+Note if you select use SSH key for authentication, you will be asked to download the generated private key.
+   
+   This will be called something like com314-test-1_key.pem
+   
+   Note you will never be able to get this again - keep it safe.
+
+   ![alt text](../docs/images/azure-create-keypair.png "Figure azure-create-keypair.png ")
+   
+   See the example [how to connect your server using ssh with pem key file](https://try.direct/blog/how-to-connect-your-server-using-ssh-with-pem-key-file)
+   
+## Accessing your machine
+
+You can access the running machine from the azure web page using the serial console with your username and password
+
+   ![alt text](../docs/images/serialConsol.png "Figure serialConsol.png ")
+   
+   
+   ![alt text](../docs/images/serialConsol2.png "Figure serialConsol2.png ")
+   
+
+Or you can access the machine over the Internet using [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) and SSH. 
+
+Use the IP address or the DNS name with Putty
+
+   ![alt text](../docs/images/putty1.png "Figure putty1.png ")
+
+## Install Apache
+
+1. log into your virtual machine
+
+2. use the following commands to install apache and turn it on.
+
+```
+sudo apt update
+sudo apt install apache2
+sudo systemctl start apache2
+
+```
+
+You can see the web page at http://your-vm-ip-address/
+
+
