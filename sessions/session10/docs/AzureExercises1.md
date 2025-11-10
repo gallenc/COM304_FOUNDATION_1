@@ -77,6 +77,8 @@ You will see the overview of the machine with the public IP address and you can 
 
    ![alt text](../docs/images/overviewVM.png "Figure overviewVM.png ")
 
+9. Alterative Authentication with SSH (OPTIONAL)
+
 Note if you select use SSH key for authentication, you will be asked to download the generated private key.
    
    This will be called something like com314-test-1_key.pem
