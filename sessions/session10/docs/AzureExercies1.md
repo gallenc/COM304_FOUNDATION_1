@@ -44,7 +44,7 @@ https://portal.azure.com/#view/Microsoft_Azure_Policy/PolicyMenuBlade/%7E/Assign
    
 4. You will be presented with a configuration page for the new machine
 
-   ![alt text](../docs/images/AzureForStudentsAzureForStudents-create-basic.png "Figure AzureForStudentsAzureForStudents-create-basic.png ")
+   ![alt text](../docs/images/AzureForStudents-create-basic.png "Figure AzureForStudents-create-basic.png ")
 
 5. Fill in the values similar to this example page.
    
