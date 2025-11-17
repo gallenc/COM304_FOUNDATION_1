@@ -2,6 +2,14 @@
 
 # Session 11 - consolidation
 
+# AI
+
+Artificial Intelegence systems are increasingly being adopted by business. Lots of introductary material is available on line including the following:
+
+[Linkedin learning AI Introduction](https://www.linkedin.com/learning/introduction-to-artificial-intelligence-24947908/)
+
+# Consolidation
+
 You have this week and next to complete any class exercises.
 
 Take this opportunity to 
