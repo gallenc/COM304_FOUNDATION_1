@@ -107,3 +107,16 @@ git push
 
 ```
 
+### Syncing with the upstream repo using GitHub UI
+I will be adding stuff to the upstream repo each session and you should be able to pull these into your local repo using the procedure described below.
+
+PLEASE DO NOT CHANGE ANYTHING IN YOUR LOCAL REPO EXCEPT IN `myPracticeCourseWork`.
+ this will allow merges to go smoothly.
+
+The simplest way to merge any changes from my upstream repository to your fork is to use the `synchronize fork` button if it appears on your forked repo. 
+Be very careful not to choose the option which discards your changes but choose the synchronize option which merges the upstream files.
+This should work smoothly provided you have made only made change in `myPracticeCourseWork`.
+
+![alt text](../main/docs/images/syncFork.png "Figure syncFork.png")
+
+
